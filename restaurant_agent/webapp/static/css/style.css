@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#chatContainer {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: #5cb85c;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#chatbox {
+    flex-grow: 1;
+    padding: 20px;
+    height: 400px; /* Or use min-height and flex-grow */
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 1.4;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #dcf8c6; /* Light green */
+    color: #333;
+    margin-left: auto; /* Align to the right */
+    border-bottom-right-radius: 5px;
+}
+
+.agent-message {
+    background-color: #e9e9eb; /* Light grey */
+    color: #333;
+    margin-right: auto; /* Align to the left */
+    border-bottom-left-radius: 5px;
+}
+
+.error-message {
+    background-color: #f8d7da; /* Light red for errors */
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+}
+
+
+#inputArea {
+    display: flex;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+#userInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#sendButton:hover {
+    background-color: #4cae4c;
+}
